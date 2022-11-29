@@ -7,9 +7,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/yuanprogrammer/xiaoyuanboke/stargazers"><img alt="star" src="https://img.shields.io/github/stars/yuanprogrammer/xiaoyuanboke.svg?label=Stars&style=social"/></a>
-  <a href="https://github.com/yuanprogrammer/xiaoyuanboke/network/members"><img alt="star" src="https://img.shields.io/github/forks/yuanprogrammer/xiaoyuanboke.svg?label=Fork&style=social"/></a>
-  <a href="https://github.com/yuanprogrammer/xiaoyuanboke/watchers"><img alt="star" src="https://img.shields.io/github/watchers/yuanprogrammer/xiaoyuanboke.svg?label=Watch&style=social"/></a>
+  <a href="https://github.com/yuanprogrammer/xiaoyuanboke-vue/stargazers"><img alt="star" src="https://img.shields.io/github/stars/yuanprogrammer/xiaoyuanboke.svg?label=Stars&style=social"/></a>
+  <a href="https://github.com/yuanprogrammer/xiaoyuanboke-vue/network/members"><img alt="star" src="https://img.shields.io/github/forks/yuanprogrammer/xiaoyuanboke.svg?label=Fork&style=social"/></a>
+  <a href="https://github.com/yuanprogrammer/xiaoyuanboke-vue/watchers"><img alt="star" src="https://img.shields.io/github/watchers/yuanprogrammer/xiaoyuanboke.svg?label=Watch&style=social"/></a>
 </p>
 
 ## 小袁个人博客平台
