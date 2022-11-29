@@ -118,38 +118,34 @@ https://github.com/yuanprogrammer/xiaoyuanboke-vue
 ![image](https://user-images.githubusercontent.com/86464456/176443195-5f728111-1700-4be2-bab4-abb1c41ec4ff.png)
 
 
-## 代码相关运行截图 （部分）
-### 前台
+## 运行截图
 
-#### 文章列表首页
-![image](https://user-images.githubusercontent.com/86464456/172376841-a64ae35e-2acf-41fa-989d-96a31cc0895f.png)
+#### 登录
+![image](https://user-images.githubusercontent.com/86464456/204574036-d77ef428-65d2-403a-8398-7e18d46ef2d0.png)
 
-#### 文章详细页
-![image](https://user-images.githubusercontent.com/86464456/172376941-986b59ba-cdfe-41a1-bae7-73d18e0bd13f.png)
+#### 角色管理
+![image](https://user-images.githubusercontent.com/86464456/204574197-b1a4769a-2cb1-4093-b6c4-00189e0953c5.png)
 
-#### 时间线
-![image](https://user-images.githubusercontent.com/86464456/172377042-57aa24da-40bd-43bd-b78a-f790b7b0574d.png)
-
-#### 留言板
-![image](https://user-images.githubusercontent.com/86464456/172377122-660a38a8-8ee0-4ce5-acbb-394762a7a3a8.png)
-
-### 后台管理
+#### 权限管理
+![image](https://user-images.githubusercontent.com/86464456/204574274-6cfe58b6-0cdb-422c-99f9-c062ed02d1bb.png)
 
 #### 实时聊天
 ![bc110fd247f0b02bc8fe0f1ece9ea7e](https://user-images.githubusercontent.com/86464456/204419293-af442fe9-7636-494b-afc9-0a42591280ee.jpg)
 
+#### 发布文章
+![image](https://user-images.githubusercontent.com/86464456/204574696-9efe8e6a-a0e5-4eaf-937f-51a91bd6411b.png)
 
 #### 文章列表
-![image](https://user-images.githubusercontent.com/86464456/172377815-aa19c8ae-4d90-49f9-a852-975195f4a126.png)
+![image](https://user-images.githubusercontent.com/86464456/204574813-ef9fc40b-9f49-4c5d-903b-b815f75d8e3a.png)
 
-#### 文章发布
-![image](https://user-images.githubusercontent.com/86464456/172377861-ce433f80-a4f3-475c-9cba-04a1a641e09d.png)
+#### 时间线
+![image](https://user-images.githubusercontent.com/86464456/204575025-e88fc94d-b13e-4b29-a347-2e862cea8daf.png)
 
-#### 分类管理
-![image](https://user-images.githubusercontent.com/86464456/172377959-9b33682f-7c0c-4db3-a047-3d74abe0c1d4.png)
+#### 问题反馈
+![image](https://user-images.githubusercontent.com/86464456/204575163-023e0be0-c53f-4f0e-bb57-0808bdcb8482.png)
 
-#### 用户管理
-![image](https://user-images.githubusercontent.com/86464456/172378087-cda88364-91cf-4bd6-8d05-8d9cc9496d19.png)
+#### 前台用户列表
+![image](https://user-images.githubusercontent.com/86464456/204575542-095eb42c-f8a3-49a8-8b94-94c2084a709a.png)
 
 #### 用户操作日志
 ![image](https://user-images.githubusercontent.com/86464456/172378029-adfaecad-b1c3-4854-9e5c-6a451993a0bc.png)
