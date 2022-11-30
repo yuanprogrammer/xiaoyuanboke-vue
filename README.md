@@ -113,8 +113,55 @@ https://github.com/yuanprogrammer/xiaoyuanboke
 https://github.com/yuanprogrammer/xiaoyuanboke-vue
 
 ## 项目结构
-
-![image](https://user-images.githubusercontent.com/86464456/176443195-5f728111-1700-4be2-bab4-abb1c41ec4ff.png)
+- **api（接口）**
+  - *blog*
+    - article.js（文章接口）
+    - catrgory.js（分类接口）
+    - feedback.js（反馈接口）
+    - friendlink.js（友链接口
+    - homeMessage.js（留言接口）
+    - timeline.js（时间线接口）
+  - *system*
+    - permission.js（权限接口）
+    - role.js（角色接口）
+    - sysUSer.js（系统用户接口）
+  - utils
+    - qiniu.js（七牛接口）
+  - login.js（登录接口）
+  - user.js（用户操作接口）
+- **views（页面）**
+  - *article（文章相关）*
+    - components（搜索组件）
+    - detail（详细页）
+    - draft（草稿）
+    - list（列表）
+    - publish（发布文章）
+    - schedule（待发布列表）
+  - *category（分类列表）*
+  - *dashboard（首页）*
+    - components（用户资料等组件）
+  - *feedback（反馈管理）*
+    - problem（问题反馈）
+    - suggest（建议反馈）
+  - *friendlink（友链列表*
+  - *layout（布局）*
+  - *login（登录页）*
+  - *message（留言管理）*
+  - *notice（通知管理）*
+    - article（文章通知）
+    - renew（更新日志）
+  - *system（系统管理）*
+    - permission（权限管理）
+    - role（角色管理）
+    - user（系统用户管理）
+  - *timeline（时间线管理）*
+    - save（添加时间线）
+  - *user*
+    - 用户列表
+    - 用户操作列表
+  - *APP.vue（入口）*
+  - *main.js（主函数）*
+  - *permission.js（权限拦截）*
 
 
 ## 运行截图
