@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://github.com/xiaoyuanboke" target="_blank">小袁博客平台</a></h1>
+<h1 align="center"><a href="https://github.com/xiaoyuanboke" target="_blank">小袁个人博客平台 —— Vue后台</a></h1>
 <p align="center">
   <a href="https://blog.csdn.net/weixin_47971206?spm=1000.2115.3001.5343"><img alt="author" src="https://user.xiaoyuan-boke.com/svg/author-xiaoyuan.svg"/></a>
   <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html"><img alt="JDK" src="https://img.shields.io/badge/jdk1.8.0_131-orange.svg"/></a>
@@ -12,7 +12,6 @@
   <a href="https://github.com/yuanprogrammer/xiaoyuanboke-vue/watchers"><img alt="star" src="https://img.shields.io/github/watchers/yuanprogrammer/xiaoyuanboke-vue.svg?label=Watch&style=social"/></a>
 </p>
 
-## 小袁个人博客平台 —— Vue后台
 小袁博客管理平台，
 - **系统管理**
  - 角色管理
@@ -103,17 +102,13 @@
 http://180.76.158.195/ （前台）<br>
 http://180.76.158.195/back-manager （后台）<br>
 
-## 后端工程结构
-
-![未命名文件](https://user-images.githubusercontent.com/86464456/201698374-badcbf7c-9625-48ff-9322-7672727e5c2e.png)
-
 ### 后端开源地址：
 https://github.com/yuanprogrammer/xiaoyuanboke
 
 ### 前端开源地址：
 https://github.com/yuanprogrammer/xiaoyuanboke-vue
 
-## 后台管理Vue项目结构
+## 项目结构
 
 ![image](https://user-images.githubusercontent.com/86464456/176443195-5f728111-1700-4be2-bab4-abb1c41ec4ff.png)
 
