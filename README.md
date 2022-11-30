@@ -96,8 +96,8 @@
 （5）增加了实时聊天功能，支持发送离线消息，用户上线即可接受消息
 
 ## 文档
-#### 启动文档地址：
-#### 开发文档地址：
+#### 启动文档地址：<br>
+https://github.com/yuanprogrammer/xiaoyuanboke-vue/blob/main/startup.md
 
 ## 项目体验地址：
 // https://www.xiaoyuan-boke.com (前台) <br>
