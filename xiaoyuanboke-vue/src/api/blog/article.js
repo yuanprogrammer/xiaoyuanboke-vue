@@ -8,7 +8,7 @@ export default {
    */
   findCategoryList() {
     return request({
-      url: '/api/category',
+      url: '/category',
       method: 'get',
     })
   },
@@ -20,7 +20,7 @@ export default {
    */
   publishArticle(article) {
     return request({
-      url: '/api/article/publish',
+      url: '/article/publish',
       method: 'post',
       data: article
     })
@@ -34,7 +34,7 @@ export default {
    */
   findArticleList(queryParam) {
     return request({
-      url: `/api/article/list`,
+      url: `/article/list`,
       method: 'post',
       data: queryParam
     })
@@ -47,7 +47,7 @@ export default {
    */
   getArticleCategoryById(articleId) {
     return request({
-      url: `/api/category/${articleId}/article`,
+      url: `/category/${articleId}/article`,
       method: 'get'
     })
   },
@@ -59,7 +59,7 @@ export default {
    */
   removeArticleById(articleId) {
     return request({
-      url: `/api/article/${articleId}`,
+      url: `/article/${articleId}`,
       method: 'delete',
     })
   },
@@ -71,7 +71,7 @@ export default {
    */
   getArticleDetailContent(articleId) {
     return request({
-      url: `/api/article/detail/${articleId}`,
+      url: `/article/detail/${articleId}`,
       method: 'get'
     })
   },
@@ -83,7 +83,7 @@ export default {
    */
   getArticlePublishContent(articleId) {
     return request({
-      url: `/api/article/${articleId}`,
+      url: `/article/${articleId}`,
       method: 'get'
     })
   },
@@ -95,9 +95,25 @@ export default {
    */
   updateArticle(article) {
     return request({
-      url: '/api/article',
+      url: '/article',
       method: 'put',
       data: article
+    })
+  },
+
+  /**
+   * 图片上传
+   * @param param 文件
+   * @returns {*}
+   */
+  uploadImage(param) {
+    return request({
+      url: '/article/upload',
+      method: 'post',
+      data: param,
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      }
     })
   }
 }

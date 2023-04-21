@@ -3,7 +3,7 @@ import request from "../../utils/request";
 export default {
   getRoleList(param) {
     return request({
-      url: '/api/role/list',
+      url: '/role/list',
       method: 'post',
       data: param
     })
@@ -11,7 +11,7 @@ export default {
 
   updateRolePermission(param) {
     return request({
-      url: '/api/role/updatePermission',
+      url: '/role/updatePermission',
       method: 'put',
       data: param
     })
@@ -19,7 +19,7 @@ export default {
 
   insertRole(param) {
     return request({
-      url: '/api/role/insertRole',
+      url: '/role/insertRole',
       method: 'post',
       data: param
     })
@@ -27,7 +27,7 @@ export default {
 
   deleteRole(param) {
     return request({
-      url: '/api/role/deleteRole',
+      url: '/role/deleteRole',
       method: 'delete',
       data: param
     })

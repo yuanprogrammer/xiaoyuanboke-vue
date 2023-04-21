@@ -3,22 +3,22 @@ import request from '@/utils/request'
 export default {
   deleteMessage(id) {
     return request({
-      url: `/api/homeMessage/${id}`,
+      url: `/homeMessage/${id}`,
       method: 'delete'
     })
   },
 
   deleteMoreMessage(ids) {
     return request({
-      url: '/api/homeMessage',
+      url: '/homeMessage',
       method: 'delete',
       data: ids
     })
   },
-  
+
   editMessage(message) {
     return request({
-      url: '/api/homeMessage',
+      url: '/homeMessage',
       method: 'put',
       data: message
     })
@@ -26,7 +26,7 @@ export default {
 
   findMessageList(pageIndex, pageSize) {
     return request({
-      url: `/api/homeMessage/${pageIndex}/${pageSize}`,
+      url: `/homeMessage/${pageIndex}/${pageSize}`,
       method: 'get'
     })
   }

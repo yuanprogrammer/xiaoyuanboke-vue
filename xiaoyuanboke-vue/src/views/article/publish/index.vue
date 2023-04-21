@@ -194,7 +194,6 @@
 let articleJson = require('@/utils/json/article.json')
 // 引入article.js
 import article from '@/api/blog/article'
-import qiniu from '@/api/utils/qiniu'
 export default {
   // ...
     data() {
@@ -250,8 +249,10 @@ export default {
       // 自定义图片上传
       uploadImg: function ($vm, file, fileName) {
         // 添加图片
-        qiniu.uploadArticleImage(file, 'content').then((response) => {
-          $vm.insertImg(response.data.url, response.data.url)
+        const formData = new FormData();
+        formData.append('image', file);
+        article.uploadImage(formData).then(res => {
+          $vm.insertImg(res.data.url, res.data.url)
         })
         // 两个参数 第一个是图片访问路径 第二个是文件名
         // $vm.insertImg(`${$vm.config.imageUploader.imagePrefix}${fileName}`, fileName)

@@ -3,7 +3,7 @@ import request from '@/utils/request'
  export default {
    findUserList(queryParam) {
      return request({
-       url: '/api/user/list',
+       url: '/user/list',
        method: 'post',
        data: queryParam
      })
@@ -11,7 +11,7 @@ import request from '@/utils/request'
 
    findUserOperationList(queryParam) {
      return request({
-       url: '/api/user/list/operation',
+       url: '/user/list/operation',
        method: 'post',
        data: queryParam
      })
@@ -19,7 +19,7 @@ import request from '@/utils/request'
 
    findOperationType() {
      return request({
-       url: '/api/userOperation/type',
+       url: '/userOperation/type',
        method: 'get'
      })
    }

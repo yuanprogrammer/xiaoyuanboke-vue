@@ -3,14 +3,14 @@ import request from '@/utils/request'
 export default {
   getPermissionList() {
     return request({
-      url: '/api/permission/list',
+      url: '/permission/list',
       method: 'get'
     })
   },
 
   getPermissionListByRoleKey(param) {
     return request({
-      url: '/api/permission/list',
+      url: '/permission/list',
       method: 'post',
       data: param
     })
@@ -18,7 +18,7 @@ export default {
 
   selectModuleList(param) {
     return request({
-      url: '/api/permission/selectModule',
+      url: '/permission/selectModule',
       method: 'post',
       data: param
     })
@@ -26,7 +26,7 @@ export default {
 
   insertModule(param) {
     return request({
-      url: '/api/permission/insertModule',
+      url: '/permission/insertModule',
       method: 'post',
       data: param
     })
@@ -34,7 +34,7 @@ export default {
 
   updateModule(param) {
     return request({
-      url: '/api/permission/updateModule',
+      url: '/permission/updateModule',
       method: 'put',
       data: param
     })
@@ -42,7 +42,7 @@ export default {
 
   deleteModule(param) {
     return request({
-      url: '/api/permission/deleteModule',
+      url: '/permission/deleteModule',
       method: 'delete',
       data: param
     })
@@ -50,7 +50,7 @@ export default {
 
   selectActionList(param) {
     return request({
-      url: '/api/permission/selectAction',
+      url: '/permission/selectAction',
       method: 'post',
       data: param
     })
@@ -58,7 +58,7 @@ export default {
 
   insertAction(param) {
     return request({
-      url: '/api/permission/insertAction',
+      url: '/permission/insertAction',
       method: 'post',
       data: param
     })
@@ -66,7 +66,7 @@ export default {
 
   updateAction(param) {
     return request({
-      url: '/api/permission/updateAction',
+      url: '/permission/updateAction',
       method: 'put',
       data: param
     })
@@ -74,7 +74,7 @@ export default {
 
   deleteAction(param) {
     return request({
-      url: '/api/permission/deleteAction',
+      url: '/permission/deleteAction',
       method: 'delete',
       data: param
     })

@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function login(username, password) {
   return request({
-    url: '/api/system/login',
+    url: '/system/login',
     method: 'post',
     data: {
       username,
@@ -13,21 +13,21 @@ export function login(username, password) {
 
 export function getInfo() {
   return request({
-    url: '/api/system/getInfo',
+    url: '/system/getInfo',
     method: 'post',
   })
 }
 
 export function logout() {
   return request({
-    url: '/api/system/logout',
+    url: '/system/logout',
     method: 'post'
   })
 }
 
 export function wxLogin() {
   return request({
-    url: '/api/system/wx_login',
+    url: '/system/wx_login',
     method: 'get'
   })
 }

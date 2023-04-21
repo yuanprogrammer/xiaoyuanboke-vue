@@ -34,14 +34,14 @@ export default {
 
   getCategoryList() {
     return request({
-      url: '/api/category',
+      url: '/category',
       method: 'get'
     })
   },
 
   findParentCategory() {
     return request({
-      url: '/api/category/parent',
+      url: '/category/parent',
       method: 'get'
     })
   }

@@ -3,7 +3,7 @@ import request from '@/utils/request'
 export default{
   addFriendLink(friend) {
     return request({
-      url: '/api/friendlink',
+      url: '/friendlink',
       method: 'post',
       data: friend
     })
@@ -11,14 +11,14 @@ export default{
 
   deleteFriendLink(id) {
     return request({
-      url: `/api/friendlink/${id}`,
+      url: `/friendlink/${id}`,
       method: 'delete'
     })
   },
 
   editFriendLink(friend) {
     return request({
-      url: '/api/friendlink',
+      url: '/friendlink',
       method: 'put',
       data: friend
     })
@@ -26,9 +26,9 @@ export default{
 
   findFriendLinkList(pageIndex, pageSize) {
     return request({
-      url: `/api/friendlink/${pageIndex}/${pageSize}`,
+      url: `/friendlink/${pageIndex}/${pageSize}`,
       method: 'get'
     })
   },
-  
+
 }

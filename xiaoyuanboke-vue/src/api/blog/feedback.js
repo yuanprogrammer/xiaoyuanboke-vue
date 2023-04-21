@@ -9,7 +9,7 @@ export default {
    */
   findProblemFeedbackList(param) {
     return request({
-      url: `/api/feedback/problem/list`,
+      url: `/feedback/problem/list`,
       method: 'post',
       data: param
     })
@@ -22,7 +22,7 @@ export default {
    */
   editProblemState(problem) {
     return request({
-      url: '/api/feedback/problem',
+      url: '/feedback/problem',
       method: 'put',
       data: problem
     })
@@ -35,7 +35,7 @@ export default {
    */
   deleteProblem(id) {
     return request({
-      url: `/api/feedback/problem/${id}`,
+      url: `/feedback/problem/${id}`,
       method: 'delete'
     })
   },
@@ -47,7 +47,7 @@ export default {
    */
    noticeUser(problem) {
     return request({
-      url: '/api/feedback/problem/notice',
+      url: '/feedback/problem/notice',
       method: 'post',
       data: problem
     })
@@ -61,7 +61,7 @@ export default {
    */
   findSuggestFeedbackList(pageIndex, pageSize) {
     return request({
-      url: `/api/feedback/suggest/${pageIndex}/${pageSize}`,
+      url: `/feedback/suggest/${pageIndex}/${pageSize}`,
       method: 'get'
     })
   },
@@ -73,7 +73,7 @@ export default {
    */
   deleteSuggest(id) {
     return request({
-      url: `/api/feedback/suggest/${id}`,
+      url: `/feedback/suggest/${id}`,
       method: 'delete'
     })
   }
