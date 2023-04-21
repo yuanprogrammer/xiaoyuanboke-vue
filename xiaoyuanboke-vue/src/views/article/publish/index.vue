@@ -51,18 +51,12 @@
               <!-- 上传文章封面 -->
               <el-col :span="10">
                 <el-upload v-if="articleCoverVisible"
-                  class="article-cover"
-                  :action="BASE_API + '/qiniu/kodo/upload/articleImage'"
-                  :data="{
-                    folderName: 'cover'
-                  }"
-                  :headers="{
-                    AK: 'xx',
-                    SK: 'xx'
-                  }"
-                  :show-file-list="false"
-                  :on-success="handleAvatarSuccess"
-                  :before-upload="beforeAvatarUpload">
+                           class="article-cover"
+                           :action="BASE_API + '/article/upload'"
+                           :show-file-list="false"
+                           :disabled="isStopUpload"
+                           :on-success="handleAvatarSuccess"
+                           :before-upload="beforeAvatarUpload">
                   <img v-if="article.cover" :src="article.cover" class="cover">
                   <i v-else class="el-icon-plus article-cover-icon"></i>
                 </el-upload>
@@ -216,13 +210,14 @@ export default {
         toolbar: { },
         // 自定义
         BASE_API: process.env.BASE_API,
+        isStopUpload: false,
         imageUploader: {
           custom: true,
           fileType: 'file',
         },
         // 发布文章表单
         dialogFormVisible: false,
-        formLabelWidth: '80px',
+        formLabelWidth: '100px',
         // 封面摘要选项
         radio: true,
         articleCoverVisible: true,
@@ -312,17 +307,32 @@ export default {
         this.articleCoverVisible = coverOption
       },
       handleAvatarSuccess(res, file) {
-        this.article.cover = res.data.url
+        // this.article.cover = res.data.url
         // this.imageUrl = URL.createObjectURL(file.raw);
       },
       beforeAvatarUpload(file) {
-        const isJPG = file.type === 'image/jpeg' & file.type === 'image/png';
+        const isJPG = /^image\//.test(file.type);
         const isLt2M = file.size / 1024 / 1024 < 10;
+        if (!isJPG) {
+          this.$message.error('请上传图片类型文件！')
+        }
 
         if (!isLt2M) {
           this.$message.error('上传头像图片大小不能超过 10MB!');
         }
-        return isJPG && isLt2M;
+
+        try {
+          this.isStopUpload = true
+
+          const formData = new FormData();
+          formData.append('image', file);
+          article.uploadImage(formData).then(res => {
+            this.article.cover = res.data.url
+          })
+        } finally {
+          this.isStopUpload = false
+        }
+        return false
       },
 
       /**
